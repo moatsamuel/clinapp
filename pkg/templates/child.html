@@ -1,0 +1,969 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Home: Homepage customized this
+{% endblock %}
+  {% block main %}
+  
+    <!-- ================= HERO ================= -->
+     
+    <section class="bg-gradient-to-br from-green-50 via-white to-green-50">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div class="grid lg:grid-cols-2 gap-10 items-center
+                        min-h-[500px] py-12">
+
+
+                <!-- LEFT SIDE -->
+                <div>
+
+                    <!-- Small heading -->
+                    <p class="text-green-600
+                              font-semibold
+                              text-sm
+                              mb-4">
+                        Your Health, Our Priority
+                    </p>
+
+
+                    <!-- Main heading -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl
+                               font-bold
+                               leading-tight
+                               text-slate-900
+                               max-w-xl">
+
+                        Book Appointments
+                        <br>
+
+                        <span>
+                            with Trusted Doctors
+                        </span>
+
+                    </h1>
+
+
+                    <!-- Description -->
+                    <p class="mt-6
+                              text-slate-600
+                              text-base
+                              leading-7
+                              max-w-lg">
+
+                        Get quality healthcare, from the comfort of your home.
+                        Schedule appointments, consult with specialists and
+                        manage your health — all in one place.
+
+                    </p>
+
+
+                    <!-- Search -->
+                    <div class="mt-7
+                                flex items-center
+                                bg-white
+                                border border-slate-100
+                                rounded-xl
+                                shadow-sm
+                                p-1.5
+                                max-w-xl">
+
+                        <!-- Search icon -->
+                        <div class="pl-3 pr-2">
+
+                            <svg class="w-5 h-5 text-slate-400"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24">
+
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z">
+                                </path>
+
+                            </svg>
+
+                        </div>
+
+
+                        <input
+                            type="text"
+                            placeholder="Search for a doctor, specialty or clinic..."
+                            class="flex-1
+                                   border-0
+                                   outline-none
+                                   focus:ring-0
+                                   text-sm
+                                   text-slate-700
+                                   placeholder:text-slate-400
+                                   bg-transparent"
+                        >
+
+
+                        <button
+                            class="bg-green-600
+                                   hover:bg-green-700
+                                   text-white
+                                   font-medium
+                                   text-sm
+                                   px-6
+                                   py-3
+                                   rounded-lg
+                                   transition">
+
+                            Find Doctor
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- Features -->
+                    <div class="flex flex-wrap
+                                items-center
+                                gap-7
+                                mt-7">
+
+                        <!-- Feature 1 -->
+                        <div class="flex items-center gap-2">
+
+                            <div class="flex items-center justify-center
+                                        w-7 h-7
+                                        rounded-full
+                                        bg-green-100">
+
+                                <svg class="w-4 h-4 text-green-600"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24">
+
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z">
+                                    </path>
+
+                                </svg>
+
+                            </div>
+
+                            <div>
+                                <p class="text-xs font-semibold text-slate-800">
+                                    Trusted Doctors
+                                </p>
+
+                                <p class="text-[10px] text-slate-500">
+                                    Verified & experienced
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Feature 2 -->
+                        <div class="flex items-center gap-2">
+
+                            <div class="flex items-center justify-center
+                                        w-7 h-7
+                                        rounded-full
+                                        bg-green-100">
+
+                                <svg class="w-4 h-4 text-green-600"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24">
+
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M8 2v4m8-4v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z">
+                                    </path>
+
+                                </svg>
+
+                            </div>
+
+                            <div>
+                                <p class="text-xs font-semibold text-slate-800">
+                                    Easy Booking
+                                </p>
+
+                                <p class="text-[10px] text-slate-500">
+                                    In just a few clicks
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Feature 3 -->
+                        <div class="flex items-center gap-2">
+
+                            <div class="flex items-center justify-center
+                                        w-7 h-7
+                                        rounded-full
+                                        bg-green-100">
+
+                                <svg class="w-4 h-4 text-green-600"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24">
+
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z">
+                                    </path>
+
+                                </svg>
+
+                            </div>
+
+                            <div>
+                                <p class="text-xs font-semibold text-slate-800">
+                                    Secure & Private
+                                </p>
+
+                                <p class="text-[10px] text-slate-500">
+                                    Your data is safe
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RIGHT SIDE -->
+                <div class="relative flex justify-center lg:justify-end">
+
+                    <!-- Decorative circle -->
+                    <div class="absolute
+                                w-72 h-72
+                                bg-green-100
+                                rounded-full
+                                -left-5
+                                top-10
+                                opacity-70">
+                    </div>
+
+
+                    <!-- Doctor image -->
+                    <div class="relative
+                                w-full
+                                max-w-lg
+                                h-[420px]
+                                overflow-hidden
+                                rounded-3xl">
+
+                        <img
+                            src="image/doctor.png"
+                            alt="Doctor"
+                            class="w-full h-full object-cover"
+                        >
+
+                    </div>
+
+
+                    <!-- Floating appointment card -->
+                    <div class="absolute
+                                bottom-8
+                                left-4
+                                sm:left-0
+                                bg-white
+                                rounded-2xl
+                                shadow-xl
+                                px-5
+                                py-4
+                                flex items-center gap-4">
+
+                        <div class="flex items-center justify-center
+                                    w-12 h-12
+                                    rounded-xl
+                                    bg-green-50">
+
+                            <svg class="w-6 h-6 text-green-600"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24">
+
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M8 2v4m8-4v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z">
+                                </path>
+
+                            </svg>
+
+                        </div>
+
+
+                        <div>
+
+                            <p class="text-sm font-bold text-slate-900">
+                                Book Your
+                            </p>
+
+                            <p class="text-sm font-bold text-slate-900">
+                                Appointment Today
+                            </p>
+
+                            <p class="text-xs text-slate-500 mt-1">
+                                Quick. Easy. Reliable.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= WHY CLINAPP ================= -->
+    <section class="bg-white py-16">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <!-- Section Heading -->
+            <div class="text-center max-w-2xl mx-auto">
+
+                <p class="text-green-600 font-semibold text-sm mb-2">
+                    Why Clinapp?
+                </p>
+
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+                    Healthcare Made Easier
+                </h2>
+
+                <p class="mt-4 text-slate-600 leading-7">
+                    We make it simple to find trusted healthcare professionals
+                    and book appointments whenever you need them.
+                </p>
+
+            </div>
+
+
+            <!-- Feature Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+
+
+                <!-- Card 1 -->
+                <div class="bg-green-50 border border-green-100
+                            rounded-2xl p-7
+                            text-center
+                            hover:shadow-md
+                            transition">
+
+                    <!-- Icon -->
+                    <div class="mx-auto flex items-center justify-center
+                                w-14 h-14
+                                rounded-full
+                                bg-green-100
+                                text-green-600">
+
+                        <svg class="w-7 h-7"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24">
+
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M15 19a3 3 0 0 0-6 0m3-7a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm8 8v-2a4 4 0 0 0-4-4h-1M17 3a4 4 0 0 1 0 8">
+                            </path>
+
+                        </svg>
+
+                    </div>
+
+
+                    <h3 class="mt-5 text-lg font-bold text-slate-900">
+                        Trusted Doctors
+                    </h3>
+
+                    <p class="mt-3 text-sm text-slate-600 leading-6">
+                        Connect with qualified and experienced healthcare
+                        professionals you can trust.
+                    </p>
+
+                </div>
+
+
+
+                <!-- Card 2 -->
+                <div class="bg-green-50 border border-green-100
+                            rounded-2xl p-7
+                            text-center
+                            hover:shadow-md
+                            transition">
+
+                    <!-- Icon -->
+                    <div class="mx-auto flex items-center justify-center
+                                w-14 h-14
+                                rounded-full
+                                bg-green-100
+                                text-green-600">
+
+                        <svg class="w-7 h-7"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24">
+
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M8 2v4m8-4v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm9 10h.01M12 16h.01M8 14h.01M16 14h.01M8 18h.01M16 18h.01">
+                            </path>
+
+                        </svg>
+
+                    </div>
+
+
+                    <h3 class="mt-5 text-lg font-bold text-slate-900">
+                        Easy Appointment Booking
+                    </h3>
+
+                    <p class="mt-3 text-sm text-slate-600 leading-6">
+                        Find a doctor, choose a convenient time, and book your
+                        appointment in just a few clicks.
+                    </p>
+
+                </div>
+
+
+
+                <!-- Card 3 -->
+                <div class="bg-green-50 border border-green-100
+                            rounded-2xl p-7
+                            text-center
+                            hover:shadow-md
+                            transition">
+
+                    <!-- Icon -->
+                    <div class="mx-auto flex items-center justify-center
+                                w-14 h-14
+                                rounded-full
+                                bg-green-100
+                                text-green-600">
+
+                        <svg class="w-7 h-7"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24">
+
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Zm0-11V7m0 4h4">
+                            </path>
+
+                        </svg>
+
+                    </div>
+
+
+                    <h3 class="mt-5 text-lg font-bold text-slate-900">
+                        Secure & Private
+                    </h3>
+
+                    <p class="mt-3 text-sm text-slate-600 leading-6">
+                        Your personal information is handled with care and
+                        kept secure while using Clinapp.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT CLINAPP ================= -->
+    <section id="about" class="bg-green-50 py-16">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+
+                <!-- Left: Image -->
+                <div class="relative">
+
+                    <!-- Decorative background -->
+                    <div class="absolute -left-4 -bottom-4
+                                w-32 h-32
+                                bg-green-200
+                                rounded-3xl
+                                opacity-60">
+                    </div>
+
+                    <!-- Image -->
+                    <div class="relative
+                                overflow-hidden
+                                rounded-3xl
+                                h-[380px]
+                                bg-green-100">
+                        <img
+                            src="{{ url_for('static', filename='../static/images/doctor.png') }} "
+                            alt="Doctor consulting with a patient"
+                            class="w-full h-full object-cover"
+                            onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+                        >
+
+                        <!-- Fallback -->
+                        <div class="hidden absolute inset-0
+                                    flex flex-col
+                                    items-center justify-center
+                                    text-green-600">
+
+                            <svg class="w-16 h-16 mb-3"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24">
+
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                    d="M15 19a3 3 0 0 0-6 0m3-7a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm8 8v-2a4 4 0 0 0-4-4h-1M17 3a4 4 0 0 1 0 8">
+                                </path>
+
+                            </svg>
+
+                            <p class="text-sm font-medium">
+                                Clinapp Healthcare
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right: Content -->
+                <div>
+
+                    <!-- Small heading -->
+                    <p class="text-green-600
+                            font-semibold
+                            text-sm
+                            mb-3">
+                        About Clinapp
+                    </p>
+
+
+                    <!-- Main heading -->
+                    <h2 class="text-3xl md:text-4xl
+                            font-bold
+                            text-slate-900
+                            leading-tight">
+
+                        Your Trusted Healthcare
+                        <span class="text-green-600">
+                            Companion
+                        </span>
+
+                    </h2>
+
+
+                    <!-- Description -->
+                    <p class="mt-5
+                            text-slate-600
+                            leading-7
+                            max-w-xl">
+
+                        Clinapp is a healthcare appointment platform designed
+                        to make accessing healthcare simpler and more convenient.
+                        We connect patients with healthcare professionals,
+                        allowing you to find a doctor and schedule appointments
+                        from one place.
+
+                    </p>
+
+
+                    <p class="mt-4
+                            text-slate-600
+                            leading-7
+                            max-w-xl">
+
+                        Whether you need a routine consultation or want to see
+                        a specialist, Clinapp helps you take the next step
+                        towards getting the care you need.
+
+                    </p>
+
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3
+                                gap-6
+                                mt-8
+                                pt-7
+                                border-t border-green-200">
+
+
+                        <!-- Stat 1 -->
+                        <div>
+
+                            <p class="text-2xl
+                                    md:text-3xl
+                                    font-bold
+                                    text-green-600">
+                                5+
+                            </p>
+
+                            <p class="mt-1
+                                    text-sm
+                                    text-slate-500">
+                                Specialties
+                            </p>
+
+                        </div>
+
+
+                        <!-- Stat 2 -->
+                        <div>
+
+                            <p class="text-2xl
+                                    md:text-3xl
+                                    font-bold
+                                    text-green-600">
+                                100+
+                            </p>
+
+                            <p class="mt-1
+                                    text-sm
+                                    text-slate-500">
+                                Doctors
+                            </p>
+
+                        </div>
+
+
+                        <!-- Stat 3 -->
+                        <div>
+
+                            <p class="text-2xl
+                                    md:text-3xl
+                                    font-bold
+                                    text-green-600">
+                                10k+
+                            </p>
+
+                            <p class="mt-1
+                                    text-sm
+                                    text-slate-500">
+                                Appointments
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Button -->
+                    <div class="mt-8">
+
+                        <a href="about.html"
+                            class="inline-flex
+                                items-center
+                                gap-2
+                                bg-green-600
+                                hover:bg-green-700
+                                text-white
+                                font-medium
+                                text-sm
+                                px-6
+                                py-3
+                                rounded-lg
+                                transition">
+
+                            Learn More
+
+                            <svg class="w-4 h-4"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24">
+
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 12h14m-6-6 6 6-6 6">
+                                </path>
+
+                            </svg>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="bg-green-50 py-16">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <!-- Section Heading -->
+            <div class="text-center max-w-2xl mx-auto">
+
+                <p class="text-green-600 font-semibold text-sm mb-2">
+                    How It Works
+                </p>
+
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+                    Book Your Appointment in 3 Easy Steps
+                </h2>
+
+                <p class="mt-4 text-slate-600 leading-7">
+                    Getting the healthcare you need is simple. Find the right
+                    doctor, choose a convenient time, and confirm your appointment.
+                </p>
+
+            </div>
+
+
+            <!-- Steps -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+
+                <!-- Step 1 -->
+                <div class="relative text-center">
+
+                    <div class="mx-auto w-16 h-16 flex items-center justify-center
+                                rounded-full bg-green-600 text-white shadow-md">
+
+                        <svg class="w-7 h-7"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24">
+
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="1.8"
+                                d="M21 21l-4.35-4.35m2.1-5.4a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z">
+                            </path>
+
+                        </svg>
+
+                    </div>
+
+                    <span class="inline-block mt-5 text-xs font-semibold
+                                text-green-600 bg-green-100 px-3 py-1 rounded-full">
+                        STEP 01
+                    </span>
+
+                    <h3 class="mt-3 text-lg font-bold text-slate-900">
+                        Find a Doctor
+                    </h3>
+
+                    <p class="mt-3 text-sm text-slate-600 leading-6 max-w-sm mx-auto">
+                        Search for a doctor based on their specialty,
+                        name, or healthcare service.
+                    </p>
+
+                </div>
+
+
+                <!-- Step 2 -->
+                <div class="relative text-center">
+
+                    <div class="mx-auto w-16 h-16 flex items-center justify-center
+                                rounded-full bg-green-600 text-white shadow-md">
+
+                        <svg class="w-7 h-7"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24">
+
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="1.8"
+                                d="M6 2v4m12-4v4M3 10h18M5 5h14a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z">
+                            </path>
+
+                        </svg>
+
+                    </div>
+
+                    <span class="inline-block mt-5 text-xs font-semibold
+                                text-green-600 bg-green-100 px-3 py-1 rounded-full">
+                        STEP 02
+                    </span>
+
+                    <h3 class="mt-3 text-lg font-bold text-slate-900">
+                        Choose a Date
+                    </h3>
+
+                    <p class="mt-3 text-sm text-slate-600 leading-6 max-w-sm mx-auto">
+                        View available dates and select a time that
+                        works best for your schedule.
+                    </p>
+
+                </div>
+
+
+                <!-- Step 3 -->
+                <div class="relative text-center">
+
+                    <div class="mx-auto w-16 h-16 flex items-center justify-center
+                                rounded-full bg-green-600 text-white shadow-md">
+
+                        <svg class="w-7 h-7"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24">
+
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="1.8"
+                                d="M5 13l4 4L19 7">
+                            </path>
+
+                        </svg>
+
+                    </div>
+
+                    <span class="inline-block mt-5 text-xs font-semibold
+                                text-green-600 bg-green-100 px-3 py-1 rounded-full">
+                        STEP 03
+                    </span>
+
+                    <h3 class="mt-3 text-lg font-bold text-slate-900">
+                        Book Appointment
+                    </h3>
+
+                    <p class="mt-3 text-sm text-slate-600 leading-6 max-w-sm mx-auto">
+                        Confirm your appointment and get ready to receive
+                        the healthcare you need.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FINAL CTA ================= -->
+    <section class="bg-green-600 py-16">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div class="max-w-3xl mx-auto text-center">
+
+                <!-- Heading -->
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+                    Ready to Take Care of Your Health?
+                </h2>
+
+                <!-- Supporting Text -->
+                <p class="mt-5 text-green-100 text-base md:text-lg leading-7 max-w-2xl mx-auto">
+                    Find trusted healthcare professionals, choose a convenient
+                    appointment time, and take the next step toward better health
+                    with Clinapp.
+                </p>
+
+
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center
+                            gap-4 mt-8">
+
+                    <!-- Find a Doctor -->
+                    <a href="doctors.html"
+                    class="inline-flex items-center justify-center gap-2
+                            w-full sm:w-auto
+                            px-7 py-3.5
+                            bg-white
+                            text-green-600
+                            font-semibold
+                            rounded-lg
+                            shadow-sm
+                            hover:bg-green-50
+                            transition duration-300">
+
+                        Find a Doctor
+
+                        <svg class="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24">
+
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5l7 7-7 7">
+                            </path>
+
+                        </svg>
+
+                    </a>
+
+
+                    <!-- Create Account -->
+                    <a href="signup.html"
+                    class="inline-flex items-center justify-center gap-2
+                            w-full sm:w-auto
+                            px-7 py-3.5
+                            border border-white
+                            text-white
+                            font-semibold
+                            rounded-lg
+                            hover:bg-white
+                            hover:text-green-600
+                            transition duration-300">
+
+                        Create Account
+
+                        <svg class="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24">
+
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 4v16m8-8H4">
+                            </path>
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+  {% endblock %}
+
+
+  {% block script %}
+    <script>
+      alert("Homepage alone")
+    </script>
+    
+  {% endblock  %}
