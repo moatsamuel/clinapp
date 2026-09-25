@@ -22,12 +22,11 @@ class Doctor(db.Model):
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     first_name = db.Column(db.String(200), nullable=False)
-    first_name = db.Column(db.String(200), nullable=False)
+    last_name = db.Column(db.String(200), nullable=False)
     email = db.Column(db.String(200), nullable=False, unique=True)
     phone = db.Column(db.Integer, nullable=False)
-    specialty_id = db.Column(db.Integer, db.ForeignKey('specialties.id'), nullable=False, unique=True)
+    specialty_id = db.Column(db.Integer, db.ForeignKey('specialties.id'))
     availability = db.Column(db.Enum('Not available','Available', default='Not available'), nullable=False)
     licence_number = db.Column(db.String(100), nullable=False)
-    consultation_fee = db.Column(db.Integer, nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
