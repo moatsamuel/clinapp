@@ -1,7 +1,7 @@
 
 from flask import render_template, request, redirect, flash
 from pkg import app
-
+from pkg.models import db
 
 @app.route("/")
 def index():
@@ -16,18 +16,28 @@ def index():
 def signup():
     return render_template("signup.html")
 
-@app.route("/login")
-def login():
+# @app.route("/login")
+# def login():
+#     return render_template("login.html")
+
+@app.route("/logins")
+def log():
     return render_template("login.html")
 
 
-@app.route("/contact", methods=("GET", "POST"))
+# @app.route("/contact", methods=("GET", "POST"))
+# def contact():
+#     if request.method == "POST":
+#         flash("Message received. expect to hear from us soonest", "success")
+#         redirect("/contact")
+#     return render_template("contact.html")
+
+@app.route("/contacts", methods=("GET", "POST"))
 def contact():
     if request.method == "POST":
-        flash("Message received. expect to hear from us soonest", "success")
-        redirect("/contact")
+        flash("Message received, Expect to hear from us soonest")
+        redirect("/")
     return render_template("contact.html")
-
 
 
 @app.route("/services")
@@ -41,3 +51,10 @@ def doc():
 @app.errorhandler(404)
 def not_found(e):
     return render_template("404.html")
+
+@app.route("/specialty", methods=['GET', 'POST'])
+def special():
+    if request.method == "POST":
+        flash("Successfully Added to Database") 
+        redirect("/specialty")
+    return render_template("specialty.html")
