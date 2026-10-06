@@ -25,8 +25,42 @@ class Doctor(db.Model):
     last_name = db.Column(db.String(200), nullable=False)
     email = db.Column(db.String(200), nullable=False, unique=True)
     phone = db.Column(db.Integer, nullable=False)
-    specialty_id = db.Column(db.Integer, db.ForeignKey('specialties.id'))
+    specialty_id = db.Column(db.Integer, db.ForeignKey('specialties.id'), nullable=False)
     availability = db.Column(db.Enum('Not available','Available', default='Not available'), nullable=False)
     licence_number = db.Column(db.String(100), nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    consultation_fee = db.Column(db.Integer, nullable=False)
 
+    appointments = db.relationship("Appointment",backref='doctor')
+
+
+
+class Appointment(db.Model):
+    __tablename__ = 'appointments'
+
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    patient_id = db.Column(db.Integer,autoincrement=True)
+    doctor_id = db.Column(db.Integer, db.ForeignKey('doctors.id'), nullable=False)
+    appointment_time = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
+    reason = db.Column(db.Text,nullable=False)
+    status = db.Column(db.Enum('Pending','Accepted','Rejected','Cancelled','Completed', default='Pending'), nullable=False)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
+
+
+
+class User(db.Model):
+    __tablename__ = 'users'
+
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    fullname = db.Column(db.String(200), nullable=False)
+    email = db.Column(db.String(200), nullable=False, unique=True)
+    password_hash = db.Column(db.String(255), nullable=False)
+    phone = db.Column(db.Integer, nullable=False)
+
+
+
+    
+
+
+
+    
