@@ -1,375 +1,803 @@
 
 {% include "partials/header.html" %}
 
- <!-- ================= MAIN ================= -->
-    <section id="portfolio" class="bg-white py-20">
-
-            <div class="max-w-screen-xl mx-auto px-6">
-
-                <!-- Section Heading -->
-                <div class="text-center mb-12">
-
-                    <p class="text-sky-500 font-semibold uppercase tracking-wider">
-                        OUR DOCTORS
-                    </p>
-
-                    <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mt-2">
-                        Meet The Team
-                    </h2>
-
-                    <p class="text-slate-600 mt-4 max-w-2xl mx-auto">
-                        A selection of Specialties that showcase our doctors work
-                        to help, care and take care of you.
-                    </p>
-
-                </div>
 
 
-                <!-- Portfolio Grid -->
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="bg-blue-50 py-16 lg:py-20">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div class="max-w-2xl">
+
+                <p class="text-sm font-semibold text-blue-600 mb-2">
+                    Find a Doctor
+                </p>
+
+                <h1 class="text-4xl md:text-5xl
+                           font-bold tracking-tight
+                           text-slate-900">
+
+                    Find the Right Doctor for You
+
+                </h1>
+
+                <p class="mt-5
+                          text-base md:text-lg
+                          leading-7
+                          text-slate-600">
+
+                    Search for trusted healthcare professionals
+                    and find the right specialist for your healthcare needs.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
-                    <!-- Project 1 -  -->
-                    <article class="bg-slate-50 rounded-2xl overflow-hidden
-                                    border border-slate-200
-                                    hover:shadow-xl transition duration-300">
 
-                        <!-- Project Image -->
-                        <div class="h-56 bg-slate-200 overflow-hidden">
+    <!-- ================= DOCTORS SECTION ================= -->
 
-                            <img
-                                src="../static/images/doctor1.jpg"
-                                alt="Nova Travels website"
-                                class="w-full h-full object-cover"
-                            >
+    <main class="py-14 lg:py-20">
 
-                        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
 
-                        <!-- Project Information -->
-                        <div class="p-6">
+            <!-- Search + Filter -->
 
-                            <span class="text-sky-500 text-sm font-semibold">
-                                
-                            </span>
+            <div class="bg-white
+                        border border-slate-200
+                        rounded-2xl
+                        p-5 md:p-6
+                        shadow-sm
+                        mb-10">
 
-                            <h3 class="text-2xl font-bold text-slate-900 mt-2">
-                               
-                            </h3>
-
-                            <p class="text-slate-600 mt-3 leading-6">
-                                
-                            </p>
-
-                            <div class="flex flex-wrap gap-2 mt-5">
-
-                                <span class="bg-slate-200 text-slate-700
-                                            text-sm px-3 py-1 rounded-full">
-                                    <!--  -->
-                                </span>
-
-                                <span class="bg-slate-200 text-slate-700
-                                            text-sm px-3 py-1 rounded-full">
-                                    <!--  -->
-                                </span>
-
-                                <span class="bg-slate-200 text-slate-700
-                                            text-sm px-3 py-1 rounded-full">
-                                    <!--  -->
-                                </span>
-
-                            </div>
-
-                            <a
-                                href="#"
-                                class="inline-block mt-6 text-sky-500
-                                    font-semibold hover:text-sky-600">
-                                View Profile →
-                            </a>
-
-                        </div>
-
-                    </article>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
 
-                    <!-- Project 2 - Tailwind Layout -->
-                    <article class="bg-slate-50 rounded-2xl overflow-hidden
-                                    border border-slate-200
-                                    hover:shadow-xl transition duration-300">
+                    <!-- Search -->
 
-                        <!-- Project Image -->
-                        <div class="h-56 bg-slate-900 flex items-center justify-center">
-                            <img
-                                src="../static/images/doctor2.jpg"
-                                alt=""
-                                class="w-full h-full object-cover"
-                            >
-                        </div>
+                    <div class="md:col-span-2">
 
+                        <label for="doctor-search"
+                            class="block mb-2
+                                   text-sm font-medium
+                                   text-slate-700">
 
-                        <!-- Project Information -->
-                        <div class="p-6">
+                            Search Doctors
 
-                            <span class="text-sky-500 text-sm font-semibold">
-                                <!--  -->
-                            </span>
+                        </label>
 
-                            <h3 class="text-2xl font-bold text-slate-900 mt-2">
-                                <!--  -->
-                            </h3>
+                        <div class="relative">
 
-                            <p class="text-slate-600 mt-3 leading-6">
-                                <!--  -->
-                            </p>
+                            <div class="absolute inset-y-0 left-0
+                                        flex items-center pl-4
+                                        pointer-events-none">
 
-                            <div class="flex flex-wrap gap-2 mt-5">
+                                <svg class="w-5 h-5 text-slate-400"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24">
 
-                                <span class="bg-slate-200 text-slate-700
-                                            text-sm px-3 py-1 rounded-full">
-                                    <!--  -->
-                                </span>
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m21 21-4.35-4.35m2.1-5.4a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z">
+                                    </path>
 
-                                <span class="bg-slate-200 text-slate-700
-                                            text-sm px-3 py-1 rounded-full">
-                                    <!--  -->
-                                </span>
+                                </svg>
 
                             </div>
 
-                            <a
-                                href="#"
-                                class="inline-block mt-6 text-sky-500
-                                    font-semibold hover:text-sky-600">
-                                View Profile →
-                            </a>
+                            <input
+                                id="doctor-search"
+                                type="search"
+                                placeholder="Search by doctor name or specialty..."
+                                class="w-full
+                                       pl-11 pr-4 py-3
+                                       bg-white
+                                       border border-slate-300
+                                       rounded-lg
+                                       text-sm
+                                       text-slate-900
+                                       placeholder-slate-400
+                                       focus:ring-2
+                                       focus:ring-blue-500
+                                       focus:border-blue-500">
 
                         </div>
 
-                    </article>
-
-                    <article class="bg-slate-50 rounded-2xl overflow-hidden
-                                    border border-slate-200
-                                    hover:shadow-xl transition duration-300">
-
-                        <!-- Project Image -->
-                        <div class="h-56 bg-slate-900 flex items-center justify-center">
-                            <img
-                                src="../static/images/doctor3.png"
-                                alt=""
-                                class="w-full h-full object-cover"
-                            >
-                        </div>
+                    </div>
 
 
-                        <!-- Project Information -->
-                        <div class="p-6">
+                    <!-- Specialty -->
 
-                            <span class="text-sky-500 text-sm font-semibold">
-                                <!--  -->
-                            </span>
+                    <div>
 
-                            <h3 class="text-2xl font-bold text-slate-900 mt-2">
-                                <!--  -->
-                            </h3>
+                        <label for="specialty"
+                            class="block mb-2
+                                   text-sm font-medium
+                                   text-slate-700">
 
-                            <p class="text-slate-600 mt-3 leading-6">
-                                <!--  -->
-                            </p>
+                            Specialty
 
-                            <div class="flex flex-wrap gap-2 mt-5">
+                        </label>
 
-                                <span class="bg-slate-200 text-slate-700
-                                            text-sm px-3 py-1 rounded-full">
-                                    <!--  -->
-                                </span>
+                        <select id="specialty"
+                            class="w-full
+                                   px-4 py-3
+                                   bg-white
+                                   border border-slate-300
+                                   rounded-lg
+                                   text-sm
+                                   text-slate-700
+                                   focus:ring-2
+                                   focus:ring-blue-500
+                                   focus:border-blue-500">
 
-                                <span class="bg-slate-200 text-slate-700
-                                            text-sm px-3 py-1 rounded-full">
-                                    <!--  -->
-                                </span>
+                            <option>
+                                All Specialties
+                            </option>
 
-                            </div>
+                            <option>
+                                General Medicine
+                            </option>
 
-                            <a
-                                href="#"
-                                class="inline-block mt-6 text-sky-500
-                                    font-semibold hover:text-sky-600">
-                                View Profile →
-                            </a>
+                            <option>
+                                Cardiology
+                            </option>
 
-                        </div>
+                            <option>
+                                Pediatrics
+                            </option>
 
-                    </article>
+                            <option>
+                                Dentistry
+                            </option>
 
-                    <article class="bg-slate-50 rounded-2xl overflow-hidden
-                                    border border-slate-200
-                                    hover:shadow-xl transition duration-300">
+                            <option>
+                                Dermatology
+                            </option>
 
-                        <!-- Project Image -->
-                        <div class="h-56 bg-slate-900 flex items-center justify-center">
-                            <img
-                                src="../static/images/doctor4.jpg"
-                                alt=""
-                                class="w-full h-full object-cover"
-                            >
-                        </div>
+                            <option>
+                                Neurology
+                            </option>
 
+                        </select>
 
-                        <!-- Project Information -->
-                        <div class="p-6">
-
-                            <span class="text-sky-500 text-sm font-semibold">
-                                <!--  -->
-                            </span>
-
-                            <h3 class="text-2xl font-bold text-slate-900 mt-2">
-                                <!--  -->
-                            </h3>
-
-                            <p class="text-slate-600 mt-3 leading-6">
-                                <!--  -->
-                            </p>
-
-                            <div class="flex flex-wrap gap-2 mt-5">
-
-                                <span class="bg-slate-200 text-slate-700
-                                            text-sm px-3 py-1 rounded-full">
-                                    <!--  -->
-                                </span>
-
-                                <span class="bg-slate-200 text-slate-700
-                                            text-sm px-3 py-1 rounded-full">
-                                    <!--  -->
-                                </span>
-
-                            </div>
-
-                            <a
-                                href="#"
-                                class="inline-block mt-6 text-sky-500
-                                    font-semibold hover:text-sky-600">
-                                View Profile →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                    <article class="bg-slate-50 rounded-2xl overflow-hidden
-                                    border border-slate-200
-                                    hover:shadow-xl transition duration-300">
-
-                        <!-- Project Image -->
-                        <div class="h-56 bg-slate-900 flex items-center justify-center">
-                            <img
-                                src="../static/images/doctor5.jpeg"
-                                alt=""
-                                class="w-full h-full object-cover"
-                            >
-                        </div>
-
-
-                        <!-- Project Information -->
-                        <div class="p-6">
-
-                            <span class="text-sky-500 text-sm font-semibold">
-                                <!--  -->
-                            </span>
-
-                            <h3 class="text-2xl font-bold text-slate-900 mt-2">
-                                <!--  -->
-                            </h3>
-
-                            <p class="text-slate-600 mt-3 leading-6">
-                                <!--  -->
-                            </p>
-
-                            <div class="flex flex-wrap gap-2 mt-5">
-
-                                <span class="bg-slate-200 text-slate-700
-                                            text-sm px-3 py-1 rounded-full">
-                                    <!--  -->
-                                </span>
-
-                                <span class="bg-slate-200 text-slate-700
-                                            text-sm px-3 py-1 rounded-full">
-                                    <!--  -->
-                                </span>
-
-                            </div>
-
-                            <a
-                                href="#"
-                                class="inline-block mt-6 text-sky-500
-                                    font-semibold hover:text-sky-600">
-                                View Profile →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                    <article class="bg-slate-50 rounded-2xl overflow-hidden
-                                    border border-slate-200
-                                    hover:shadow-xl transition duration-300">
-
-                        <!-- Project Image -->
-                        <div class="h-56 bg-slate-900 flex items-center justify-center">
-                            <img
-                                src="../static/images/doctor6.jpg"
-                                alt=""
-                                class="w-full h-full object-cover"
-                            >
-                        </div>
-
-
-                        <!-- Project Information -->
-                        <div class="p-6">
-
-                            <span class="text-sky-500 text-sm font-semibold">
-                                <!--  -->
-                            </span>
-
-                            <h3 class="text-2xl font-bold text-slate-900 mt-2">
-                                <!--  -->
-                            </h3>
-
-                            <p class="text-slate-600 mt-3 leading-6">
-                                <!--  -->
-                            </p>
-
-                            <div class="flex flex-wrap gap-2 mt-5">
-
-                                <span class="bg-slate-200 text-slate-700
-                                            text-sm px-3 py-1 rounded-full">
-                                    <!--  -->
-                                </span>
-
-                                <span class="bg-slate-200 text-slate-700
-                                            text-sm px-3 py-1 rounded-full">
-                                    <!--  -->
-                                </span>
-
-                            </div>
-
-                            <a
-                                href="#"
-                                class="inline-block mt-6 text-sky-500
-                                    font-semibold hover:text-sky-600">
-                                View Profile →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    
+                    </div>
 
                 </div>
 
             </div>
 
-    </section>
+
+
+            <!-- Results Heading -->
+
+            <div class="flex items-center justify-between mb-6">
+
+                <div>
+
+                    <h2 class="text-2xl font-bold text-slate-900">
+                        Available Doctors
+                    </h2>
+
+                    <p class="mt-1 text-sm text-slate-500">
+                        Find a healthcare professional that suits your needs.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= DOCTOR CARDS ================= -->
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+                <!-- Doctor 1 -->
+
+                <div class="group h-full
+                            bg-white
+                            border border-slate-200
+                            rounded-2xl
+                            overflow-hidden
+                            hover:border-blue-200
+                            hover:shadow-lg
+                            transition duration-300">
+
+                    <!-- Image -->
+
+                    <div class="h-64 bg-blue-50 overflow-hidden">
+
+                        <img
+                            src="../static/images/doctor6.jpg"
+                            onerror="this.onerror=null; this.src='images/doctor.jpg';"
+                            alt="Dr. Sarah Johnson"
+                            class="w-full h-full object-cover
+                                   object-top
+                                   group-hover:scale-105
+                                   transition duration-500">
+
+                    </div>
+
+
+                    <!-- Content -->
+
+                    <div class="p-6">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+
+                                <h3 class="text-lg font-bold text-slate-900">
+                                    Dr. Sarah Johnson
+                                </h3>
+
+                                <p class="mt-1 text-sm text-blue-600 font-medium">
+                                    Cardiologist
+                                </p>
+
+                            </div>
+
+                            <span class="flex items-center gap-1
+                                         text-xs font-medium
+                                         text-green-600
+                                         bg-green-50
+                                         px-2.5 py-1
+                                         rounded-full">
+
+                                <span class="w-1.5 h-1.5
+                                             rounded-full
+                                             bg-green-500">
+                                </span>
+
+                                Available
+
+                            </span>
+
+                        </div>
+
+
+                        <p class="mt-4 text-sm text-slate-600 leading-6">
+                            Experienced in providing professional
+                            cardiovascular care and consultation.
+                        </p>
+
+
+                        <div class="flex items-center gap-2
+                                    mt-4 text-sm text-slate-500">
+
+                            <svg class="w-4 h-4"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24">
+
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.8"
+                                    d="M12 8v4l3 2m6-2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z">
+                                </path>
+
+                            </svg>
+
+                            10+ years experience
+
+                        </div>
+
+
+                        <a href="doctor-profile.html"
+                            class="inline-flex items-center justify-center
+                                   w-full
+                                   mt-6
+                                   px-5 py-3
+                                   bg-blue-600
+                                   text-white
+                                   text-sm font-semibold
+                                   rounded-lg
+                                   hover:bg-blue-700
+                                   transition">
+
+                            View Profile
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Doctor 2 -->
+
+                <div class="group h-full
+                            bg-white
+                            border border-slate-200
+                            rounded-2xl
+                            overflow-hidden
+                            hover:border-blue-200
+                            hover:shadow-lg
+                            transition duration-300">
+
+                    <div class="h-64 bg-blue-50 overflow-hidden">
+
+                        <img
+                            src="../static/images/doctor1.jpg"
+                            onerror="this.onerror=null; this.src='images/doctor.jpg';"
+                            alt="Dr. Michael Williams"
+                            class="w-full h-full object-cover
+                                   object-top
+                                   group-hover:scale-105
+                                   transition duration-500">
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+
+                                <h3 class="text-lg font-bold text-slate-900">
+                                    Dr. Michael Williams
+                                </h3>
+
+                                <p class="mt-1 text-sm text-blue-600 font-medium">
+                                    General Physician
+                                </p>
+
+                            </div>
+
+                            <span class="flex items-center gap-1
+                                         text-xs font-medium
+                                         text-green-600
+                                         bg-green-50
+                                         px-2.5 py-1
+                                         rounded-full">
+
+                                <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>
+
+                                Available
+
+                            </span>
+
+                        </div>
+
+                        <p class="mt-4 text-sm text-slate-600 leading-6">
+                            Providing comprehensive medical care for
+                            everyday health concerns and conditions.
+                        </p>
+
+                        <div class="flex items-center gap-2 mt-4 text-sm text-slate-500">
+
+                            <svg class="w-4 h-4"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24">
+
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.8"
+                                    d="M12 8v4l3 2m6-2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z">
+                                </path>
+
+                            </svg>
+
+                            8+ years experience
+
+                        </div>
+
+                        <a href="doctor-profile.html"
+                            class="inline-flex items-center justify-center
+                                   w-full mt-6 px-5 py-3
+                                   bg-blue-600 text-white
+                                   text-sm font-semibold
+                                   rounded-lg hover:bg-blue-700 transition">
+
+                            View Profile
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Doctor 3 -->
+
+                <div class="group h-full
+                            bg-white
+                            border border-slate-200
+                            rounded-2xl
+                            overflow-hidden
+                            hover:border-blue-200
+                            hover:shadow-lg
+                            transition duration-300">
+
+                    <div class="h-64 bg-blue-50 overflow-hidden">
+
+                        <img
+                            src="../static/images/doctor9.jpg"
+                            onerror="this.onerror=null; this.src='images/doctor.jpg';"
+                            alt="Dr. Emily Carter"
+                            class="w-full h-full object-cover
+                                   object-top
+                                   group-hover:scale-105
+                                   transition duration-500">
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+
+                                <h3 class="text-lg font-bold text-slate-900">
+                                    Dr. Emily Carter
+                                </h3>
+
+                                <p class="mt-1 text-sm text-blue-600 font-medium">
+                                    Pediatrician
+                                </p>
+
+                            </div>
+
+                            <span class="flex items-center gap-1
+                                         text-xs font-medium
+                                         text-green-600
+                                         bg-green-50
+                                         px-2.5 py-1
+                                         rounded-full">
+
+                                <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>
+
+                                Available
+
+                            </span>
+
+                        </div>
+
+                        <p class="mt-4 text-sm text-slate-600 leading-6">
+                            Dedicated to providing compassionate healthcare
+                            for children and young patients.
+                        </p>
+
+                        <div class="flex items-center gap-2 mt-4 text-sm text-slate-500">
+
+                            <svg class="w-4 h-4"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24">
+
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.8"
+                                    d="M12 8v4l3 2m6-2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z">
+                                </path>
+
+                            </svg>
+
+                            7+ years experience
+
+                        </div>
+
+                        <a href="doctor-profile.html"
+                            class="inline-flex items-center justify-center
+                                   w-full mt-6 px-5 py-3
+                                   bg-blue-600 text-white
+                                   text-sm font-semibold
+                                   rounded-lg hover:bg-blue-700 transition">
+
+                            View Profile
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Doctor 4 -->
+
+                <div class="group h-full
+                            bg-white
+                            border border-slate-200
+                            rounded-2xl
+                            overflow-hidden
+                            hover:border-blue-200
+                            hover:shadow-lg
+                            transition duration-300">
+
+                    <div class="h-64 bg-blue-50 overflow-hidden">
+
+                        <img
+                            src="../static/images/doctor4.jpg"
+                            onerror="this.onerror=null; this.src='images/doctor.jpg';"
+                            alt="Dr. David Anderson"
+                            class="w-full h-full object-cover object-top
+                                   group-hover:scale-105
+                                   transition duration-500">
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+
+                                <h3 class="text-lg font-bold text-slate-900">
+                                    Dr. David Anderson
+                                </h3>
+
+                                <p class="mt-1 text-sm text-blue-600 font-medium">
+                                    Neurologist
+                                </p>
+
+                            </div>
+
+                            <span class="flex items-center gap-1
+                                         text-xs font-medium
+                                         text-green-600 bg-green-50
+                                         px-2.5 py-1 rounded-full">
+
+                                <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>
+
+                                Available
+
+                            </span>
+
+                        </div>
+
+                        <p class="mt-4 text-sm text-slate-600 leading-6">
+                            Specializing in neurological assessment,
+                            diagnosis, and patient care.
+                        </p>
+
+                        <div class="flex items-center gap-2 mt-4 text-sm text-slate-500">
+
+                            <svg class="w-4 h-4"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24">
+
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.8"
+                                    d="M12 8v4l3 2m6-2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z">
+                                </path>
+
+                            </svg>
+
+                            12+ years experience
+
+                        </div>
+
+                        <a href="doctor-profile.html"
+                            class="inline-flex items-center justify-center
+                                   w-full mt-6 px-5 py-3
+                                   bg-blue-600 text-white
+                                   text-sm font-semibold
+                                   rounded-lg hover:bg-blue-700 transition">
+
+                            View Profile
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Doctor 5 -->
+
+                <div class="group h-full
+                            bg-white
+                            border border-slate-200
+                            rounded-2xl
+                            overflow-hidden
+                            hover:border-blue-200
+                            hover:shadow-lg
+                            transition duration-300">
+
+                    <div class="h-64 bg-blue-50 overflow-hidden">
+
+                        <img
+                            src="../static/images/doctor5.jpeg"
+                            onerror="this.onerror=null; this.src='images/doctor.jpg';"
+                            alt="Dr. Olivia Brown"
+                            class="w-full h-full object-cover object-top
+                                   group-hover:scale-105
+                                   transition duration-500">
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+
+                                <h3 class="text-lg font-bold text-slate-900">
+                                    Dr. Olivia Brown
+                                </h3>
+
+                                <p class="mt-1 text-sm text-blue-600 font-medium">
+                                    Dermatologist
+                                </p>
+
+                            </div>
+
+                            <span class="flex items-center gap-1
+                                         text-xs font-medium
+                                         text-green-600 bg-green-50
+                                         px-2.5 py-1 rounded-full">
+
+                                <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>
+
+                                Available
+
+                            </span>
+
+                        </div>
+
+                        <p class="mt-4 text-sm text-slate-600 leading-6">
+                            Helping patients maintain healthy skin through
+                            personalized dermatological care.
+                        </p>
+
+                        <div class="flex items-center gap-2 mt-4 text-sm text-slate-500">
+
+                            <svg class="w-4 h-4"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24">
+
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.8"
+                                    d="M12 8v4l3 2m6-2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z">
+                                </path>
+
+                            </svg>
+
+                            9+ years experience
+
+                        </div>
+
+                        <a href="doctor-profile.html"
+                            class="inline-flex items-center justify-center
+                                   w-full mt-6 px-5 py-3
+                                   bg-blue-600 text-white
+                                   text-sm font-semibold
+                                   rounded-lg hover:bg-blue-700 transition">
+
+                            View Profile
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Doctor 6 -->
+
+                <div class="group h-full
+                            bg-white
+                            border border-slate-200
+                            rounded-2xl
+                            overflow-hidden
+                            hover:border-blue-200
+                            hover:shadow-lg
+                            transition duration-300">
+
+                    <div class="h-64 bg-blue-50 overflow-hidden">
+
+                        <img
+                            src="../static/images/doctor7.jpg"
+                            onerror="this.onerror=null; this.src='images/doctor.jpg';"
+                            alt="Dr. James Wilson"
+                            class="w-full h-full object-cover object-top
+                                   group-hover:scale-105
+                                   transition duration-500">
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+
+                                <h3 class="text-lg font-bold text-slate-900">
+                                    Dr. James Wilson
+                                </h3>
+
+                                <p class="mt-1 text-sm text-blue-600 font-medium">
+                                    Dentist
+                                </p>
+
+                            </div>
+
+                            <span class="flex items-center gap-1
+                                         text-xs font-medium
+                                         text-green-600 bg-green-50
+                                         px-2.5 py-1 rounded-full">
+
+                                <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>
+
+                                Available
+
+                            </span>
+
+                        </div>
+
+                        <p class="mt-4 text-sm text-slate-600 leading-6">
+                            Providing professional dental care and helping
+                            patients maintain healthy smiles.
+                        </p>
+
+                        <div class="flex items-center gap-2 mt-4 text-sm text-slate-500">
+
+                            <svg class="w-4 h-4"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24">
+
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.8"
+                                    d="M12 8v4l3 2m6-2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z">
+                                </path>
+
+                            </svg>
+
+                            11+ years experience
+
+                        </div>
+
+                        <a href="doctor-profile.html"
+                            class="inline-flex items-center justify-center
+                                   w-full mt-6 px-5 py-3
+                                   bg-blue-600 text-white
+                                   text-sm font-semibold
+                                   rounded-lg hover:bg-blue-700 transition">
+
+                            View Profile
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
 
 <!-- {% include "partials/footer.html" %} -->
+
+
+
+
+
+
+

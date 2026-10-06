@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Clinapp - Book an Appointment</title>
+
+  <!-- Tailwind CSS -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Main Page -->
+
+  <div class="min-h-screen grid grid-cols-1 md:grid-cols-2">
+
+
+    <!-- LEFT SIDE -->
+    <div class="bg-gray-100 p-10">
+
+    <div class="max-w-md mx-auto">
+
+        <!-- Logo -->
+        <h1 class="text-3xl font-bold text-blue-600 text-center mb-2">
+        Clinapp
+        </h1>
+
+        <!-- Heading -->
+        <p class="text-gray-600 font-bold mb-6 text-center">
+        Book an Appointment
+        </p>
+
+
+        <!-- Appointment Form -->
+        <form>
+
+
+        <!-- Full Name -->
+        <label class="block mb-2 font-bold text-gray-700">
+            Full Name
+        </label>
+
+        <input
+            type="text"
+            placeholder="Enter your full name"
+            class="w-full p-3 border-2 border-transparent rounded-lg mb-4 shadow-md focus:outline-none focus:border-blue-500">
+
+
+        <!-- Email -->
+        <label class="block mb-2 font-bold text-gray-700">
+            Email Address
+        </label>
+
+        <input
+            type="email"
+            placeholder="Enter your email"
+            class="w-full p-3 border-2 border-transparent rounded-lg mb-4 shadow-md focus:outline-none focus:border-blue-500">
+
+
+        <!-- Phone Number -->
+        <label class="block mb-2 font-bold text-gray-700">
+            Phone Number
+        </label>
+
+        <input
+            type="tel"
+            placeholder="Enter your phone number"
+            class="w-full p-3 border-2 border-transparent rounded-lg mb-4 shadow-md focus:outline-none focus:border-blue-500">
+
+
+        <!-- Department -->
+        <label class="block mb-2 font-bold text-gray-700">
+            Department
+        </label>
+
+        <select
+            class="w-full p-3 border-2 border-transparent rounded-lg mb-4 shadow-md focus:outline-none focus:border-blue-500">
+
+            <option value="">Select a department</option>
+            <option>General Medicine</option>
+            <option>Cardiology</option>
+            <option>Dermatology</option>
+            <option>Pediatrics</option>
+
+        </select>
+
+
+        <!-- Doctor -->
+        <label class="block mb-2 font-bold text-gray-700">
+            Doctor
+        </label>
+
+        <select
+            class="w-full p-3 border-2 border-transparent rounded-lg mb-4 shadow-md focus:outline-none focus:border-blue-500">
+
+            <option value="">Select a doctor</option>
+            <option>Dr. Damilola Dangote</option>
+            <option>Dr. Adewale Musk</option>
+            <option>Dr. James Christopher</option>
+            <option>Dr. Emily Johnson</option>
+
+        </select>
+
+
+        <!-- Appointment Date -->
+        <label class="block mb-2 font-bold text-gray-700">
+            Appointment Date
+        </label>
+
+        <input
+            type="date"
+            class="w-full p-3 border-2 border-transparent rounded-lg mb-4 shadow-md focus:outline-none focus:border-blue-500">
+
+
+        <!-- Appointment Time -->
+        <label class="block mb-2 font-bold text-gray-700">
+            Appointment Time
+        </label>
+
+        <input
+            type="time"
+            class="w-full p-3 border-2 border-transparent rounded-lg mb-6 shadow-md focus:outline-none focus:border-blue-500">
+
+
+        <!-- Book Appointment Button -->
+        <button
+            type="submit"
+            class="w-full p-3 bg-blue-600 text-white rounded-lg transition duration-300 hover:scale-105">
+
+            Book Appointment
+
+        </button>
+
+
+        </form>
+
+
+    </div>
+
+    </div>
+
+
+
+    <!-- RIGHT SIDE -->
+    <div class="bg-blue-600 text-white flex items-center p-10">
+
+    <div>
+
+        <h2 class="text-4xl font-bold mb-6">
+        Your Health,
+        <br>
+        Our Priority.
+        </h2>
+
+        <p class="text-lg mb-8">
+        Book an appointment with our healthcare
+        professionals and get the care you need.
+        </p>
+
+
+        <!-- Information Grid -->
+        <div class="grid grid-cols-2 gap-4">
+
+
+        <!-- Easy Booking -->
+        <div class="bg-blue-500 p-4 rounded-lg">
+
+            <h3 class="font-bold mb-2">
+            Easy Booking
+            </h3>
+
+            <p>
+            Schedule your appointment quickly and easily.
+            </p>
+
+        </div>
+
+
+        <!-- Trusted Care -->
+        <div class="bg-blue-500 p-4 rounded-lg">
+
+            <h3 class="font-bold mb-2">
+            Trusted Care
+            </h3>
+
+            <p>
+            Connect with qualified healthcare professionals.
+            </p>
+
+        </div>
+
+
+        </div>
+
+    </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

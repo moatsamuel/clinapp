@@ -3,3 +3,4 @@ from pkg import app
 
 if __name__ == "__main__":
     app.run(debug=os.getenv('DEBUG'), port=os.getenv('PORT'))
+    
